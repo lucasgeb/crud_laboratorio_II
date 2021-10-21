@@ -43,7 +43,8 @@ const d = document,
         e.preventDefault();
 
     if (!e.target.id.value) {
-      //Crear - POST
+      //en caso de que el campo id esté vacio (es decir aún no está incluído el elemento que queremos crear en la base de datos)
+      //con el método POST logramos incluir el elemento en la base de dato.
       try {
         let options = {
             method: "POST",
@@ -66,7 +67,7 @@ const d = document,
         $form.insertAdjacentHTML("afterend",`<p><b>Error ${err.status}: ${message}</b></p>`);
       }
     } else {
-      //Update - PUT
+      //PUT
       try {
         let options = {
             method: "PUT",
@@ -92,20 +93,20 @@ const d = document,
   }
 });
 
-d.addEventListener("click", async e => {
-  if(e.target.matches(".edit")) {
-    $title.textContent = "Editar info de los equipos";
-    $form.equipo.value = e.target.dataset.equipoTemplate;
-    $form.colores.value = e.target.dataset.coloresTemplate;
-    $form.fundacion.value = e.target.dataset.fundacionTemplate;
-    $form.origen.value = e.target.dataset.origenTemplate;
-    $form.id.value = e.target.dataset.id;
-  }
+     d.addEventListener("click", async e => {
+      if(e.target.matches(".edit")) {
+         $title.textContent = "Editar info de los equipos";
+         $form.equipo.value = e.target.dataset.equipoTemplate;
+         $form.colores.value = e.target.dataset.coloresTemplate;
+         $form.fundacion.value = e.target.dataset.fundacionTemplate;
+         $form.origen.value = e.target.dataset.origenTemplate;
+         $form.id.value = e.target.dataset.id;
+          }
 
   if(e.target.matches(".delete")) {
     let isDelete = confirm(`¿Estás seguro de eliminar este club con id ${e.target.dataset.id} de la lista ?`);
     if (isDelete) {
-      //Delete - DELETE
+      //Estructura para eliminar el elemento según el id del elemento
       try {
         let options = {
             method: "DELETE",
