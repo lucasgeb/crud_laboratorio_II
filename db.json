@@ -1,59 +1,46 @@
-{"equipos": [
+{
+  "equipos": [
     {
       "id": 1,
-      "nombre": "",
-      "colores": "",
-      "año fundación": "",
-      "país de origen": ""
+      "equipo": "Barcelona FC",
+      "colores": "Azul y Rojo",
+      "fundacion": "1899",
+      "origen": "España"
     },
     {
-      "id": 1,
-      "nombre": "",
-      "colores": "",
-      "año fundación": "",
-      "país de origen": ""
+      "id": 2,
+      "equipo": "Chelsea FC",
+      "colores": "Azul",
+      "fundacion": "1905",
+      "origen": "Inglaterra"
     },
     {
-      "id": 1,
-      "nombre": "",
-      "colores": "",
-      "año fundación": "",
-      "país de origen": ""
+      "id": 3,
+      "equipo": "River Plate",
+      "colores": "Rojo y Blanco",
+      "fundacion": "1901",
+      "origen": "Argentina"
     },
     {
-      "id": 1,
-      "nombre": "",
-      "colores": "",
-      "año fundación": "",
-      "país de origen": ""
+      "id": 4,
+      "equipo": "Peñarol",
+      "colores": "Amarillo y Negro",
+      "fundacion": "1891",
+      "origen": "Uruguay"
     },
     {
-      "id": 1,
-      "nombre": "",
-      "colores": "",
-      "año fundación": "",
-      "país de origen": ""
+      "equipo": "Boca jrs",
+      "colores": "Azul y Amarillo",
+      "fundacion": "1905",
+      "origen": "Argentina",
+      "id": 5
     },
     {
-      "id": 1,
-      "nombre": "",
-      "colores": "",
-      "año fundación": "",
-      "país de origen": ""
-    },
-    {
-      "id": 1,
-      "nombre": "",
-      "colores": "",
-      "año fundación": "",
-      "país de origen": ""
-    },
-    {
-      "id": 1,
-      "nombre": "",
-      "colores": "",
-      "año fundación": "",
-      "país de origen": ""
+      "equipo": "Independiente",
+      "colores": "Rojo",
+      "fundacion": "1905",
+      "origen": "Argentina",
+      "id": 6
     }
   ]
 }

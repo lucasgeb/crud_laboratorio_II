@@ -1,0 +1,24 @@
+body {
+    background-image: url(./fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title-container{font:400 140px/1em Amatic SC;text-align:center;padding-top:140px; color:cornflowerblue}
+
+.jittery span{animation:jitter 200ms linear infinite;color:#f06d06;display:inline-block}
+@keyframes jitter{ 50%{transform:skewY(0.7deg) skewX(-0.7deg) scale(1.006);} }
+
+.form-row{
+    justify-content:left;
+    margin-left: 20px;
+}
+
+.btn{
+    background-color:cornflowerblue;
+    color:black;
+    font-family: monospace;
+    font-size: 17px;
+}
+
+    
